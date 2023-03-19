@@ -1,6 +1,10 @@
 ## SPCN04
 ## Kubernetes
 
+## REF
+https://github.com/iamapinan/kubeplay-traefik
+https://github.com/TanankornMoonprathom/Kube
+
 ## Wakatime
 https://wakatime.com/@spcn04/projects/nqgwrowcuf
 
