@@ -29,7 +29,7 @@ https://wakatime.com/@spcn04/projects/nqgwrowcuf
 
        - Click New
         
-        ![image](https://user-images.githubusercontent.com/119097663/224904653-d6231336-cf6a-4280-bdba-2e72043c5a5c.png)
+        ![image](https://user-images.githubusercontent.com/115150753/226191123-c9d8517a-6596-4a85-bdf8-1d8ad57fe8ed.png)
 
       - Add Path that have kubectl.exe
       - Click OK
