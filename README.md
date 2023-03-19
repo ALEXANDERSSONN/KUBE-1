@@ -68,13 +68,13 @@ https://wakatime.com/@spcn01/projects/syzhwptxjl
    ```ruby
    minikube start --driver=docker
    ```
-   ![image](https://user-images.githubusercontent.com/119097663/224906660-5f08fbf8-5503-44e7-bb24-05a45ade8ab6.png)
+   ![image](https://user-images.githubusercontent.com/115150753/226189890-047f8292-231e-4671-9bea-9c8808c609ff.png)
 
 2. Run with open dashboard
    ```ruby
    minikube dashboard
    ```
-   ![image](https://user-images.githubusercontent.com/119097663/225030868-71ccdda7-bb69-4287-802b-5111ab70fe0f.png)
+   ![image](https://user-images.githubusercontent.com/115150753/226189931-6ba8aa0b-0172-4792-892f-5da1d9d2aa53.png)
 
 3. Test services
    ```ruby
@@ -86,20 +86,19 @@ https://wakatime.com/@spcn01/projects/syzhwptxjl
    ```ruby
    minikube pause
    ```
-   ![image](https://user-images.githubusercontent.com/119097663/224907200-c1758b1c-03a8-40b2-9d5d-258644100325.png)
+   ![image](https://user-images.githubusercontent.com/115150753/226190030-9dfcdcdf-28ea-4597-9e3a-b1107e06b950.png)
 
 ## 4. Install traefik
 1. Install Traefik Resource Definitions
    ```ruby
    kubectl apply -f https://raw.githubusercontent.com/traefik/traefik/v2.9/docs/content/reference/dynamic-configuration/kubernetes-crd-definition-v1.yml
    ```
-    ![image](https://user-images.githubusercontent.com/119097663/226110351-c7723d93-8ae9-4f29-889f-9ed8690b1473.png)
+    ![image](https://user-images.githubusercontent.com/115150753/226190072-38893ffc-5660-487a-ba9b-ccc286b3f850.png)
 
 2. Install RBAC for Traefik
    ```ruby
    kubectl apply -f https://raw.githubusercontent.com/traefik/traefik/v2.9/docs/content/reference/dynamic-configuration/kubernetes-crd-rbac.yml
    ```
-    ![image](https://user-images.githubusercontent.com/119097663/226110502-6a296779-962a-40df-b759-3edd801cda8f.png) 
 
 3. Install Traefik Helmchart
    ```ruby
@@ -107,38 +106,34 @@ https://wakatime.com/@spcn01/projects/syzhwptxjl
    helm repo update 
    helm install traefik traefik/traefik 
    ```
-    ![image](https://user-images.githubusercontent.com/119097663/226110649-5b8ae072-6e3f-42b6-b231-a57d28ed1fe1.png) 
 
 4. Verify service is running
    ```ruby
    kubectl get svc -l app.kubernetes.io/name=traefik
    kubectl get po -l app.kubernetes.io/name=traefik
    ```
-    ![image](https://user-images.githubusercontent.com/119097663/226110849-021d582a-9f75-4685-94c1-2b1569d90ec5.png)
 
 5. copy user in dashboard-secret place it at user in traefik-dashboard
 
-   ![image](https://user-images.githubusercontent.com/119097663/226111225-d3332af2-4db6-49b1-8a8f-43e3b769609f.png)
 
-   ![image](https://user-images.githubusercontent.com/119097663/226111244-a7ec1e11-8f01-4070-88ba-0c7a88f83cc1.png)
 
 6. Deploy
    ```ruby
    kubectl apply -f . 
    ```
-   ![image](https://user-images.githubusercontent.com/119097663/226111342-4fa25c0d-bdf7-4beb-95fb-dc99e68fc341.png)
+   ![image](https://user-images.githubusercontent.com/115150753/226190125-8e058b95-f583-4900-be6b-d5b3f09fb129.png)
 
 ## Result
 
 ## 1. dashboard
 
-![image](https://user-images.githubusercontent.com/119097663/226111510-05b6c0ae-3697-4131-9046-29b128c18153.png)
+![image](https://user-images.githubusercontent.com/115150753/226189931-6ba8aa0b-0172-4792-892f-5da1d9d2aa53.png)
 
-## 2. https://traefik.spcn01.local/dashboard/#/http/routers
+## 2. https://traefik.spcn04.local/dashboard/#/http/routers
 
-![image](https://user-images.githubusercontent.com/119097663/226111614-134d01a9-e803-4659-8d65-8929cb80d2a2.png)
+![image](https://user-images.githubusercontent.com/115150753/226190166-87f3dc3b-40c2-4e3f-a4ee-11834c667388.png)
 
-## 5. http://web.spcn01.local/
+## 3. http://web.spcn04.local/
 
-![image](https://user-images.githubusercontent.com/119097663/226111754-5f76adc7-2ad2-4eab-bcad-f3f2e19de680.png)
+![image](https://user-images.githubusercontent.com/115150753/226190214-13485993-00af-44d6-804e-aa72ca11ab6d.png)
 
