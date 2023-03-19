@@ -1,8 +1,8 @@
-## spcn01 
-## Kubernetes In Windows
+## SPCN04
+## Kubernetes
 
 ## Wakatime
-https://wakatime.com/@spcn01/projects/syzhwptxjl
+https://wakatime.com/@spcn04/projects/nqgwrowcuf
 
 ## 1. Install Kubectl
    - Ref 
